@@ -25,11 +25,44 @@ subtr (S n) (S m) = subtr n m
 -- less n m if n < m
 -- use recursion on NN
 less :: NN -> NN -> Bool
+less O O = False
+less O n = True
+less n O = False
+less (S n) (S m) = less n m
+
+-- division
+-- division is just repeated subtraction
+-- if numerator is less than denominator, set to O
+    -- we dont have fractions in NN
+divi :: NN -> NN -> NN
+divi O n = O
+divi n O = O
+divi n m =
+    if less n m == True
+        then O
+        else
+            S(divi (subtr n m) m)
+
+-- remainder
+-- set n % O to be O to avoid errors
+-- remainder is the difference between the dividend and 
+    -- the quotient * divisor
+modl :: NN -> NN -> NN
+modl O n = O
+modl n O = O
+modl n m =
+    if less n m
+        then n
+        else subtr n (mult m (divi n m))
 
 -- greatest common divisor
 -- implement Euclid's algorithm, allow gcdN O O = O to make it simpler
 -- use recursion on NN
 gcdN :: NN -> NN -> NN
+gcdN O O = O
+gcdN O n = n
+gcdN n O = n
+gcdN n m = gcdN m (modl n m)
 
 -------------------
 -- POSITIVE NUMBERS
