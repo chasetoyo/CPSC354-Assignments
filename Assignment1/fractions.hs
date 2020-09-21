@@ -152,23 +152,32 @@ multF x y = (mult (fst x) (fst y), multP (snd x) (snd y))
 -- add fractions
 -- recall from school how to add fractions
 -- make denominators same, add numerators
--- addF :: Frac -> Frac -> Frac
--- addF (m, n) (p, q) =
---     if n == q
---         then (add m p, addF n q)
---         else
---             if n != lcm n q && q != lcm n q then
---                 addF multP n (lcm n q) 
+addF :: Frac -> Frac -> Frac
+addF x y =
+    if snd x == snd y
+        then (add (fst x) (fst y), snd x)
+        else
+            (add (mult (fst x) (p2n (snd y))) (mult (fst y) (p2n (snd x))), 
+            multP (snd x) (snd y))
 
 
 
--- -- equality of fractions
--- -- recall from school how to check that two fractions are equal
--- equalF :: Frac -> Frac -> Bool
+-- equality of fractions
+-- recall from school how to check that two fractions are equal
+equalF :: Frac -> Frac -> Bool
+equalF x y = 
+    if mult (fst x) (p2n (snd y)) == mult (p2n (snd x)) (fst y)
+        then True
+        else 
+            False
 
--- -- simplify fractions
--- -- divide numerator and denominator by the gcd of both
--- simplifyF :: Frac -> Frac
+-- simplify fractions
+-- divide numerator and denominator by the gcd of both
+-- gcd returns a NN
+-- convert to PN for snd x 
+simplifyF :: Frac -> Frac
+simplifyF x = (divi (fst x) (gcdN (fst x) (p2n (snd x))),
+               n2p (divi (p2n (snd x)) (gcdN (fst x) (p2n (snd x)))))
 
 -- --------------
 -- -- FOR TESTING
@@ -210,4 +219,5 @@ frac2ints x = (nn2int (fst x), nn2int(p2n(snd x)))
 -- -- equalF (ints2frac (2,6)) (ints2frac (1,3))
 -- -- addF (ints2frac (36,60)) (ints2frac (24,45))
 -- -- simplifyF (addF (ints2frac (36,60)) (ints2frac (24,45)))
--- -- frac2ints(simplifyF (addF (ints2frac (36,60)) (ints2frac (24,45))))
+-- -- frac2ints (simplifyF (multF (ints2frac (36,60)) (ints2frac (24,45))))
+-- frac2ints(addF (ints2frac (36,60)) (ints2frac (24,45)))
