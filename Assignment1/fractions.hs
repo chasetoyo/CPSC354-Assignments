@@ -147,7 +147,7 @@ type Frac = (NN,PN)
 -- recall from school how to multiply fractions
 -- multiply numerators and multiply denominators
 multF :: Frac -> Frac -> Frac
-multF (m, p) (n, q) = (mult m n, multP p q)
+multF x y = (mult (fst x) (fst y), multP (snd x) (snd y))
 
 -- add fractions
 -- recall from school how to add fractions
@@ -175,27 +175,38 @@ multF (m, p) (n, q) = (mult m n, multP p q)
 -- --------------
 
 -- use recursion on NN
--- nn2int :: NN -> Int
+nn2int :: NN -> Int
+nn2int O = 0
+nn2int (S n) = 1 + nn2int n
 
 -- use recursion on Int
 -- allow runtime error for negative numbers
--- int2nn :: Int -> NN
+-- base case of O and S O, then recursively call int2nn
+--      prepend S each recursive call
+int2nn :: Int -> NN
+int2nn 0 = O
+int2nn 1 = (S O)
+int2nn n = (S (int2nn (n-1)))
 
--- -- use recursion on Int
--- -- allow runtime error for non-positive numbers
--- int2pn :: Int -> PN
+-- use recursion on Int
+-- allow runtime error for non-positive numbers
+-- same implementation as int2nn, excluding case of 0
+int2pn :: Int -> PN
+int2pn 1 = I
+int2pn 2 = (T I)
+int2pn p = (T (int2pn (p-1))) 
 
 -- -- use int2nn and int2pn
--- ints2frac :: (Int,Int) -> Frac
--- ints2frac (n,p) = (int2nn n, int2pn p)
+ints2frac :: (Int,Int) -> Frac
+ints2frac (n,p) = (int2nn n, int2pn p)
 
 -- -- use nn2int 
--- frac2ints :: Frac -> (Int,Int)
--- frac2ints x = (nn2int (fst x), nn2int(p2n(snd x)))
+frac2ints :: Frac -> (Int,Int)
+frac2ints x = (nn2int (fst x), nn2int(p2n(snd x)))
 
 -- -- Some examples (make your own):
--- -- 
--- -- frac2ints (addF (ints2frac (2,3)) (ints2frac (6,8)))
+-- frac2ints (multF (ints2frac (2,3)) (ints2frac (6,8)))
+-- frac2ints (addF (ints2frac (2,3)) (ints2frac (6,8)))
 -- -- equalF (ints2frac (2,6)) (ints2frac (1,3))
 -- -- addF (ints2frac (36,60)) (ints2frac (24,45))
 -- -- simplifyF (addF (ints2frac (36,60)) (ints2frac (24,45)))
