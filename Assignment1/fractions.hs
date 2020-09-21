@@ -65,9 +65,9 @@ gcdN n O = n
 gcdN n m = gcdN m (modl n m)
 
 
--- -----------------
+-----------------
 -- POSITIVE NUMBERS
--- -----------------
+-----------------
 
 -- I represents 1
 -- T represents any number of 1's preceeding I
@@ -76,13 +76,14 @@ data PN = I | T PN
 
 -- addition of positive numbers
 -- use recursion over PN
--- same as addition over natural numbers, get rid of identity law
+-- same as addition over natural numbers, get rid of identity law of 0
 addP :: PN -> PN -> PN
 addP I n = T n
 addP (T n) m = T (addP n m)
 
 -- multiplication of positive numbers
 -- use recursion over PN
+-- Use multiplicative identity property
 multP :: PN -> PN -> PN
 multP I n = n
 multP n I = n
@@ -125,26 +126,41 @@ p2n (T m) = S(p2n m)
 -- convert from NN to PN
 -- use recursion over NN
 -- allow runtime error if NN is O
-n2p :: NN ->PN
+n2p :: NN -> PN
 n2p (S O) = I
 n2p (S n) = T (n2p n)
 
+-- least common multiple
+-- a * b / gcd(a,b)
+lcm :: PN -> PN -> PN
+lcm m n = n2p (divi (p2n(multP m n)) (gcdN (p2n m) (p2n n)))
 
--- ------------
--- -- FRACTIONS
--- ------------
+------------
+-- FRACTIONS
+------------
 
--- -- non-negative fractions
--- -- a fraction is a pair (numerator,denominator)
--- type Frac = (NN,PN)
+-- non-negative fractions
+-- a fraction is a pair (numerator,denominator)
+type Frac = (NN,PN)
 
--- -- multiply fractions
--- -- recall from school how to multiply fractions
--- multF :: Frac -> Frac -> Frac
+-- multiply fractions
+-- recall from school how to multiply fractions
+-- multiply numerators and multiply denominators
+multF :: Frac -> Frac -> Frac
+multF (m, p) (n, q) = (mult m n, multP p q)
 
--- -- add fractions
--- -- recall from school how to add fractions
+-- add fractions
+-- recall from school how to add fractions
+-- make denominators same, add numerators
 -- addF :: Frac -> Frac -> Frac
+-- addF (m, n) (p, q) =
+--     if n == q
+--         then (add m p, addF n q)
+--         else
+--             if n != lcm n q && q != lcm n q then
+--                 addF multP n (lcm n q) 
+
+
 
 -- -- equality of fractions
 -- -- recall from school how to check that two fractions are equal
@@ -158,11 +174,11 @@ n2p (S n) = T (n2p n)
 -- -- FOR TESTING
 -- --------------
 
--- -- use recursion on NN
+-- use recursion on NN
 -- nn2int :: NN -> Int
 
--- -- use recursion on Int
--- -- allow runtime error for negative numbers
+-- use recursion on Int
+-- allow runtime error for negative numbers
 -- int2nn :: Int -> NN
 
 -- -- use recursion on Int
