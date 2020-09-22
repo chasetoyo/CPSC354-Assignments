@@ -130,11 +130,6 @@ n2p :: NN -> PN
 n2p (S O) = I
 n2p (S n) = T (n2p n)
 
--- least common multiple
--- a * b / gcd(a,b)
-lcm :: PN -> PN -> PN
-lcm m n = n2p (divi (p2n(multP m n)) (gcdN (p2n m) (p2n n)))
-
 ------------
 -- FRACTIONS
 ------------
@@ -218,6 +213,7 @@ frac2ints x = (nn2int (fst x), nn2int(p2n(snd x)))
 -- frac2ints (addF (ints2frac (2,3)) (ints2frac (6,8)))
 -- -- equalF (ints2frac (2,6)) (ints2frac (1,3))
 -- -- addF (ints2frac (36,60)) (ints2frac (24,45))
--- -- simplifyF (addF (ints2frac (36,60)) (ints2frac (24,45)))
+-- -- frac2ints (simplifyF (addF (ints2frac (36,60)) (ints2frac (24,45))))
 -- -- frac2ints (simplifyF (multF (ints2frac (36,60)) (ints2frac (24,45))))
 -- frac2ints(addF (ints2frac (36,60)) (ints2frac (24,45)))
+-- nn2int (p2n(addP (int2pn 43) (int2pn 45)))
