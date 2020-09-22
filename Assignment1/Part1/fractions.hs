@@ -131,6 +131,7 @@ p2n (T m) = S(p2n m)
 -- use recursion over NN
 -- allow runtime error if NN is O
 n2p :: NN -> PN
+n2p O = undefined
 n2p (S O) = I
 n2p (S n) = T (n2p n)
 
