@@ -12,4 +12,4 @@ Part 2 uses the built-in arithmetic of Haskell to create an interpeter for both 
 - Part2/numbers3.hs (Interpreter for abstract syntax)
 - Part2/Calculator/Calculator.hs (Interpreter for concrete syntax)
 - Part2/Calculator/Interpreter.hs (Interpreter for concrete syntax)
-- Part2/Calculator/numbers.cf (Interpreter for concrete syntax)
+- [`Part2`](Calculator/numbers.cf) (Interpreter for concrete syntax)
