@@ -107,6 +107,7 @@ subtrNP (S n) (T m) = subtrNP n m
 -- divide a natural number by a positive number
 -- use recursion over NN
 -- anything divided by 1 is itself
+-- dividing by same thing gives 1
     -- otherwise, same as divi
 divP :: NN -> PN -> NN
 divP O n = O
@@ -115,7 +116,10 @@ divP (S n) (T m) =
     if less (S n) (p2n (T m))
         then O
         else
-            divP (subtrNP n m) m
+            if (S n) == (p2n (T m))
+                then (S O)
+            else
+                divP (subtrNP n m) m
 
 -- convert from PN to NN
 -- use recursion over PN
@@ -159,6 +163,7 @@ addF x y =
 
 -- equality of fractions
 -- recall from school how to check that two fractions are equal
+-- cross multiply and check for equality
 equalF :: Frac -> Frac -> Bool
 equalF x y = 
     if mult (fst x) (p2n (snd y)) == mult (p2n (snd x)) (fst y)
@@ -208,15 +213,14 @@ ints2frac (n,p) = (int2nn n, int2pn p)
 frac2ints :: Frac -> (Int,Int)
 frac2ints x = (nn2int (fst x), nn2int(p2n(snd x)))
 
--- -- Some examples (make your own):
--- frac2ints (multF (ints2frac (2,3)) (ints2frac (6,8)))
--- frac2ints (addF (ints2frac (2,3)) (ints2frac (6,8)))
--- -- equalF (ints2frac (2,6)) (ints2frac (1,3))
--- -- addF (ints2frac (36,60)) (ints2frac (24,45))
--- -- frac2ints (simplifyF (addF (ints2frac (36,60)) (ints2frac (24,45))))
--- -- frac2ints (simplifyF (multF (ints2frac (36,60)) (ints2frac (24,45))))
--- frac2ints(addF (ints2frac (36,60)) (ints2frac (24,45)))
--- nn2int (p2n(addP (int2pn 43) (int2pn 45)))
+-- Some examples (make your own):
 -- add (int2nn 2) (int2nn 3)
 -- addP (int2pn 2) (int2pn 3)
--- frac2ints simplifyF(addF (ints2frac(1,2)) (ints2frac(3,4)))
+-- frac2ints (addF (ints2frac(1,2)) (ints2frac(3,4)))
+-- frac2ints (simplifyF(addF (ints2frac(1,2)) (ints2frac(3,4))))
+-- frac2ints (simplifyF(multF (ints2frac(1,2)) (ints2frac(3,4))))
+-- equalF (ints2frac(1,2)) (ints2frac(4,8))
+-- nn2int (subtrNP (int2nn 5) (int2pn 4))
+-- nn2int (gcdN (int2nn 10) (int2nn 5))
+-- nn2int (divi (int2nn 100) (int2nn 100))
+-- nn2int (divP (int2nn 2) (int2pn 2))
