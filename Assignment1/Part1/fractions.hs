@@ -47,13 +47,14 @@ divi n m =
 -- set n % O to be O to avoid errors
 -- remainder is the difference between the dividend and 
     -- the quotient * divisor
-modl :: NN -> NN -> NN
-modl O n = O
-modl n O = O
-modl n m =
-    if less n m
-        then n
-        else subtr n (mult m (divi n m))
+-- modl :: NN -> NN -> NN
+-- modl O n = O
+-- modl n O = O
+-- modl n m =
+--     if less n m
+--         then n
+--         else 
+--             subtr n (mult m (divi n m))
 
 -- greatest common divisor
 -- implement Euclid's algorithm, allow gcdN O O = O to make it simpler
@@ -62,7 +63,12 @@ gcdN :: NN -> NN -> NN
 gcdN O O = O
 gcdN O n = n
 gcdN n O = n
-gcdN n m = gcdN m (modl n m)
+-- gcdN n m = gcdN m (modl n m)
+gcdN n m = 
+    if less n m
+        then gcdN n (subtr m n)
+        else 
+            gcdN m (subtr n m) 
 
 
 -----------------
