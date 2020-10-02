@@ -11,3 +11,4 @@ eval (Minus n m) = (eval n) - (eval m)
 eval (Modulo n m) = (eval n) `mod` (eval m)
 eval (Increment n) = (eval n) + 1
 eval (Decrement n) = (eval n) - 1
+eval (Negative n) = negate (eval n)
