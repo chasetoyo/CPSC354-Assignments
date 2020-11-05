@@ -8,7 +8,7 @@ EApp.    Exp3 ::= Exp3 Exp4 ;
 ENat0.   Exp4 ::= "0" ;
 ENatS.   Exp4 ::= "S" Exp4 ; 
 EVar.    Exp5 ::= Id ; 
-EIfElse. Exp2 ::= "if" Exp3 "=" Exp3 "then" Exp3 "else" Exp3 ;
+EIfElse. Exp2 ::= "if" Exp "=" Exp "then" Exp "else" Exp ;
 
 coercions Exp 5 ;
 
