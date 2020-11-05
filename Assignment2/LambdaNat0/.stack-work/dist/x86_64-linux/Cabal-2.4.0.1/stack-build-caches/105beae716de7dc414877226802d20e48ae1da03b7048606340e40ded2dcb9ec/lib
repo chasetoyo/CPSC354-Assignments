@@ -1,0 +1,34 @@
+/usr/lib/ghc/include/ghcversion.h:
+  hash: 5fa78f17e0ab39ded09de66c85afdd61d0b598cbd4bdded87899879f213aacc1
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/src/ParLambdaNat.hs:
+  hash: 55a52f6816b449ac3bf733103ab288e5ee3e9e4df697c6428702b2785fb8d2ce
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/src/AbsLambdaNat.hs:
+  hash: e314d97ed222f3abf93e7bd6d70581c19afe753e9164ab215afd48a53e391997
+/home/chasetoyo/.stack/programs/x86_64-linux/ghc-8.6.4/lib/ghc-8.6.4/include/ghcversion.h:
+  hash: 529291d4a255ef1c3ec99116d8dca391f2db7bad8b5eab6dcbf9a70354c6eedf
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/src/Interpreter.hs:
+  hash: 3e1e6ea97db7785dc06df2f28a9d6b40ac5d5961c06a33d11166c8c49cd6c0ad
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/package.yaml:
+  hash: b8d8fbf1254b0c779a7866ff27e59097372916566ea7f8ed4b925988785c2605
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/src/LexLambdaNat.hs:
+  hash: 07b9e92a7df26263d1b83f451b100aa43dbcfe7125cd0310878a8197d0601165
+/usr/include/stdc-predef.h:
+  hash: ee35c95f8e09d071278e05e755a1bd41fbbf4517374d9464beabb1b16c1b58e9
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/LambdaNat.cabal:
+  hash: 7e33c644afb8a8a5f9fdc605c2c827865b4de067cec8db142abff39d3b197efd
+? /mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h
+: hash: c2e11ea4a14ad6f468292a516125adc7aa671203e9b5dba3ced9e9c53b01cfdf
+/home/chasetoyo/.stack/programs/x86_64-linux/ghc-8.6.4/lib/ghc-8.6.4/include/ghcplatform.h:
+  hash: 6f30e9ad0022d26323aca04816a74e38a04af174747fe91efa77324c78b0d73d
+/home/chasetoyo/.stack/programs/x86_64-linux/ghc-8.6.4/lib/ghc-8.6.4/include/ghcconfig.h:
+  hash: 03f4611ae97decc9e8c76c212bf7886d003b29d5c62b43fee6623a799f6e5fdf
+/home/chasetoyo/.stack/programs/x86_64-linux/ghc-8.6.4/lib/ghc-8.6.4/include/ghcautoconf.h:
+  hash: e12c8c84791a4c36e55527f78b2fcc3f3ece25273fc1d57259d06d6798f213b3
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/src/ErrM.hs:
+  hash: 8f13c60fdbfc623da84eca6cb20948c9b54a6dac036cb4fda2c4cc3c63342c61
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/src/PrintLambdaNat.hs:
+  hash: 9c24ee7018b69c3d9a9ef708e0d5c0ed8fff1daae75629458ce488ae2f22c4d7
+/mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/ChangeLog.md:
+  hash: 8813e52402bb3e213004a0a8162e4be2b4db6c6e9f671b755a7189dc61dd329f
+? /mnt/c/users/Chase Toyofuku/Documents/College/354/Assignment-2-1/LambdaNat0/.stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/Paths_LambdaNat.hs
+: hash: 7665a83af46f5cc7c9874c2734358b57a49d4c17ae107be352911d064e25b252

@@ -1,0 +1,3 @@
+// testing longer strings
+(\x.\y.if x = x then t else f) xx xx
+//echo "(\x.\y.if x = x then t else f) xx xx" | stack exec LambdaNat-exe

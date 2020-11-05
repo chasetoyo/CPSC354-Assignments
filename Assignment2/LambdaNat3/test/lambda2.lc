@@ -1,0 +1,2 @@
+// case of equality
+(\x.\y.if x = y then t else f) x x
