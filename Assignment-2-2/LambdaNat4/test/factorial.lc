@@ -1,0 +1,9 @@
+//fibonacci.lc
+let rec plus = \x.\y. if x=0 then y else S (plus (minus_one x) y) in 
+let rec mult = \i.\j. if i=0 then i else if i=S0 then j else (plus (j) (mult (minus_one i) j)) in
+let rec fact = \n. if n=0 then S 0 else mult (n) (fact (minus_one n)) in 
+//fact 0 //Answer: 1
+//fact S 0 //Answer: 1
+//fact S S 0 //Answer: 2
+//fact S S S 0 //Answer: 6
+//fact S S S S 0 //Answer: 24

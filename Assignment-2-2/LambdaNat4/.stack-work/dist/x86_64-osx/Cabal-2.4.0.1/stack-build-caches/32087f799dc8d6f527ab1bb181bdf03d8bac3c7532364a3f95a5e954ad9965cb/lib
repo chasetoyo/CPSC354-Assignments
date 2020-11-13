@@ -1,0 +1,32 @@
+/Users/cpsc/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcversion.h:
+  hash: 529291d4a255ef1c3ec99116d8dca391f2db7bad8b5eab6dcbf9a70354c6eedf
+/Users/cpsc/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcconfig.h:
+  hash: 03f4611ae97decc9e8c76c212bf7886d003b29d5c62b43fee6623a799f6e5fdf
+/Users/cpsc/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcplatform.h:
+  hash: 1549d9c64c43be2e2b2f756146f102c311441a9d63e1a1cd3b33e34c67e39688
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/src/ParLambdaNat.hs:
+  hash: 109aa4092268b9054a9160292637eafb7e505f750c403340fa2331d1a4cee717
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/src/Interpreter.hs:
+  hash: 5442c5d7ebc7baa6f409402ec5dc3a045edda3c50ca28e2ee49b4429975594d5
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/ChangeLog.md:
+  hash: 8813e52402bb3e213004a0a8162e4be2b4db6c6e9f671b755a7189dc61dd329f
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/src/PrintLambdaNat.hs:
+  hash: 8825af26aa45e86185c7a0d5462b51281df0a7ea230c587083ccc440df3d8354
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/README.md:
+  hash: 00208a22fd991b14b5de251635c525b098cb972c7e83751e1fdf79a5b5bcb8f5
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/src/AbsLambdaNat.hs:
+  hash: a661dfa183451741e99d4db6291f3aa9f865016108f9adf75e925040089682e2
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/LambdaNat.cabal:
+  hash: 08c543476ee7bc173d62becbe3f77b183e3136711d2bda18fc9759ed38456f32
+? /Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/.stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/autogen/Paths_LambdaNat.hs
+: hash: ed7180a968384f4cfb946e27fe551a8b136847e6af353f66778fd70df446d46e
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/src/ErrM.hs:
+  hash: df1ce6eefac56b40c0d468b218d46f799cd9f1ea2409513665921ef528e3983c
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/src/LexLambdaNat.hs:
+  hash: 7beae84dc1fdfc1b75be702e57b985906961568fe34bbef63a1ee223d4acdcc2
+/Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/package.yaml:
+  hash: b8d8fbf1254b0c779a7866ff27e59097372916566ea7f8ed4b925988785c2605
+? /Users/cpsc/Documents/CPSC354-Assignments/Assignment-2-2/LambdaNat4/.stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/autogen/cabal_macros.h
+: hash: bd61bbc763461d95fe301369b0c02784f7652d1cb07d2ee5515d970251e51dff
+/Users/cpsc/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcautoconf.h:
+  hash: f0efd2bdcf82a9005ea5631525474821818b8ff9911d33d958d9603d0f56cd78
