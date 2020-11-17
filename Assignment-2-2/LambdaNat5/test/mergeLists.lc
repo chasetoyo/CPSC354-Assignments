@@ -1,0 +1,24 @@
+//mergeLists.lc
+
+let rec le = \x.\y.
+	if x=0 then
+		S 0
+	else
+		if y=0 then
+			0
+		else
+			if x = y then
+				S 0
+			else
+				le (minus_one x) (minus_one y) in
+
+let rec makeLists = \x.
+	if tl x=# then
+		((hd x):#):#
+	else
+		((hd x):#):(makeLists (tl x)) in
+
+let rec mergeLists = \x.
+	if le (hd (hd x)) (hd (hd (tl x)))=S 0 then S 0 else 0 in
+mergeLists (S S S S 0 : #): (S S S 0 : #): (S S 0 : #): (S 0 : #): (0 : #): #
+//(0 : S 0 : S S 0 : S S S 0 : S S S S 0 : #) : #
