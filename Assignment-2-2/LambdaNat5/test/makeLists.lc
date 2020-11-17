@@ -5,6 +5,10 @@
 //make a list of one element (the head of the current list)
 //repeat using the tail of the list
 
-let rec makeLists = \x. if tl x=# then ((hd x):#):# else ((hd x):#):(makeLists (tl x)) in
+let rec makeLists = \x.
+	if tl x=# then
+		((hd x):#):#
+	else
+		((hd x):#):(makeLists (tl x)) in
 
 makeLists one:two:three:# //(one:#):(two:#):(three:#):#
