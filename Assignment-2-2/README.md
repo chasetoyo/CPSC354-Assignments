@@ -13,7 +13,7 @@ Added interpreter function for new grammar LambdaNat5.cf, also new .lc files con
 - [`Factorial`](LambdaNat4/test/factorial.lc)
 - [`Fibonacci`](LambdaNat4/test/fibonacci.lc)
 
-####LambdaNat5
+#### LambdaNat5
 - [`Interpreter`](LambdaNat5/src/Interpreter.hs)
 - [`le.lc`](LambdaNat5/test/le.lc)
 - [`merge.lc`](LambdaNat5/test/merge.lc)
