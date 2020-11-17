@@ -1,0 +1,9 @@
+//le.lc
+//compare two numbers to see if they are >=
+//subtract 1 from both numbers, whichever one hits 0 first is the smaller one
+//return S 0 if >=, return 0 else
+let rec le = \x.\y. if x=0 then S 0 else if y=0 then 0 else if x = y then S 0 else le (minus_one x) (minus_one y) in 
+le S 0 S 0
+//le S 0 S S 0
+//le S 0 0
+//le S S 0 0

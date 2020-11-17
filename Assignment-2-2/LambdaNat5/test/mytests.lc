@@ -1,0 +1,6 @@
+// hd one:two:# //one
+//hd (one:two):#  //one:two
+// hd (one:two:#):# //one:two:#
+//(hd one:two:#):# //one:#
+//tl one:two:# //two:#
+tl a:b:c:#   // --->   b:c:#
