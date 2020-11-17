@@ -20,3 +20,4 @@ Added interpreter function for new grammar LambdaNat5.cf, also new .lc files con
 - [`le.lc`](LambdaNat5/test/le.lc)
 - [`merge.lc`](LambdaNat5/test/merge.lc)
 - [`makeLists.lc`](LambdaNat5/test/makeLists.lc)
+- [`mergeLists.lc`](LambdaNat5/test/mergeLists.lc)

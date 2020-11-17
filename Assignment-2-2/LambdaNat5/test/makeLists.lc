@@ -11,4 +11,6 @@ let rec makeLists = \x.
 	else
 		((hd x):#):(makeLists (tl x)) in
 
-makeLists one:two:three:# //(one:#):(two:#):(three:#):#
+//makeLists one:two:three:# //(one:#):(two:#):(three:#):#
+//makeLists (S S S S 0:S S S 0:S S 0:S 0: 0: #)
+// ---> (S S S S 0 : #): (S S S 0 : #): (S S 0 : #): (S 0 : #): (0 : #): #

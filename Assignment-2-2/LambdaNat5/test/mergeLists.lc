@@ -12,6 +12,18 @@ let rec le = \x.\y.
 			else
 				le (minus_one x) (minus_one y) in
 
+let rec merge = \x.\y.
+	if le (hd x) (hd y)=S 0 then
+		if tl x = # then 
+			(hd x) : (y)
+		else
+			(hd x) : (merge (tl x) y)
+	else
+		if tl y = # then 
+			(hd y) : (x)
+		else
+			(hd y) : (merge (tl y) x) in
+
 let rec makeLists = \x.
 	if tl x=# then
 		((hd x):#):#
@@ -19,6 +31,13 @@ let rec makeLists = \x.
 		((hd x):#):(makeLists (tl x)) in
 
 let rec mergeLists = \x.
-	if le (hd (hd x)) (hd (hd (tl x)))=S 0 then S 0 else 0 in
-mergeLists (S S S S 0 : #): (S S S 0 : #): (S S 0 : #): (S 0 : #): (0 : #): #
-//(0 : S 0 : S S 0 : S S S 0 : S S S S 0 : #) : #
+	//if the head of first list is less than the head of next list
+	//this indicates that we are done, bc input list is sorted from h->l
+	if le (hd (hd x)) (hd (hd (tl x)))=S 0 then 
+		x
+	else
+		//reorder + combine the first and second list then
+		//preprend it to the list of the remaining lists
+		mergeLists ((merge (hd x) (hd (tl x))) : (tl (tl x))) in
+
+mergeLists (makeLists (S S S S 0:S S S 0:S S 0:S 0: 0: #))
