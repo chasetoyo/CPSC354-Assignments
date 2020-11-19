@@ -12,3 +12,4 @@
 //let rec identity = \x. if x=0 then 0 else S ( identity (minus_one x)) in identity S 0 
 //let rec plus = \x.\y. if x=0 then y else S (plus (minus_one x) y) in plus S S 0 S S S 0
 //let rec f = \ x. if x = S S S 0 then Hello_World else f (S x) in f 0 
+hd #

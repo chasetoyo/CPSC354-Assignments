@@ -41,3 +41,4 @@ let rec mergeLists = \x.
 		mergeLists ((merge (hd x) (hd (tl x))) : (tl (tl x))) in
 
 mergeLists (makeLists (S S S S 0:S S S 0:S S 0:S 0: 0: #))
+//mergeLists (makeLists (0: #))

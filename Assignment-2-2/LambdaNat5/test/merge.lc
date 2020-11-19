@@ -28,4 +28,5 @@ let rec merge = \x.\y.
 			(hd y) : (merge (tl y) x) in
 
 merge (0 : S S 0 : S S S S 0 : #) (S 0 : S S S 0 : #) 
-//merge (0 : S S S 0 : S S S S 0 : #) (S 0 : S S 0 : #) 
+//merge (0 : S S S 0 : S S S S 0 : #) (S 0 : S S 0 : #)
+//merge (0 : #) (S 0 : #) 
