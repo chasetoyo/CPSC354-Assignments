@@ -1,0 +1,9 @@
+rec le = \x.\y. case x of {
+	0 -> true,
+	_ -> case y of {
+		0 -> false,
+		_ -> le (x - 1) (y -1)
+	}
+} ;; 
+
+-- let rec le = \x.\y.if x=0 then S 0 else if y=0 then 0 else if x = y then S 0 else le (minus_one x) (minus_one y) in 
