@@ -1,0 +1,26 @@
+:q
+member [1,2,3] [1];;
+member [1,2,3] 1;;
+member <1,2,3> 1;;
+member 1,2,3, 1;;
+member [1,2,3] 1;;
+add 1 2;;
+:load test/examples.lc 
+    _ -> plusone (add (x-1) y)} ;;
+    0 -> y, 
+rec add = \x . \y. case x of { 
+plusone 2;;
+plusone 1;;
+plusone;;
+plusone;
+:help
+plusone
+val plusone = \x. x+1;;
+:q
+q
+:q
+:env
+:load test/examples.lc 
+:load test/test.lc
+:load test/tests.lc
+:help

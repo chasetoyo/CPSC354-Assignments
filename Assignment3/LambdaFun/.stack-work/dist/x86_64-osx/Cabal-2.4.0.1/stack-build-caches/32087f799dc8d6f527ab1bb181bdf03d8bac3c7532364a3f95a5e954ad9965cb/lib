@@ -1,0 +1,38 @@
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/LamFun.cabal:
+  hash: 0221fe542d661c0660fc0721182236a94851eff090a0354b73e0817015404b8a
+? /Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/.stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/autogen/cabal_macros.h
+: hash: b5ace5f6500484aa7a5564be7ea73b5d6bd96b742748527206b6166e83492328
+/Users/cpsc/.stack/programs/x86_64-osx/ghc-8.6.4/lib/ghc-8.6.4/include/ghcversion.h:
+  hash: 529291d4a255ef1c3ec99116d8dca391f2db7bad8b5eab6dcbf9a70354c6eedf
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamMemInterpreter.hs:
+  hash: 86304216f713eb0ae8271a651da71bbd1fef0810d4543cad01501377eb645992
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/README.md:
+  hash: ffad7322991fbdc74067aa5a8a754fadd365f28f031a2ad752549d1445d79ad2
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/package.yaml:
+  hash: 880b93bb175d405aff9cf5caea3f73a5422f35647f5d0714eee7ae67e854a90c
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamFunParser.hs:
+  hash: 27af1b72976599b0e4009b9200db2e00f9158c8d989493801934386ab316102e
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/Memory.hs:
+  hash: ae2b75b992f74090173659fe47aaa92abbd17771b789365a2291d1c9648b0e89
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamArrayInterpreter.hs:
+  hash: 84979df7068c7c93e87d4e9483e8f003caf759d01074846efcb59767cd0580ea
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamFunLexer.hs:
+  hash: 6f8ac09c698663424b0880d9b2cff0bd8b3a0077e8648991f773b59612e3ca49
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/ChangeLog.md:
+  hash: 8813e52402bb3e213004a0a8162e4be2b4db6c6e9f671b755a7189dc61dd329f
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamFunInterpreter.hs:
+  hash: aa1962f1cf78503f1320fe2fc9fde309e8b9cff954eabc342af8a0315e12f87d
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/Environment.hs:
+  hash: d10dc55d4bbad3d0c1878ad972ad90d654826e046d6e7e5d20e4fa506246df44
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamInterpreter.hs:
+  hash: 96f7069c8a856137163f3201afd95f87aa34089fc66bc49baf95e218c3238ee3
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/Utils.hs:
+  hash: fd92ea2714052a964e64d8a31ebef29b353731382c319514b73f9ddde369113f
+? /Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/.stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/autogen/Paths_LamFun.hs
+: hash: 59f0b48b6b9bc6886f7060e0f2e422ceb2192e164eb60008696a79ec4084b679
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamRecInterpreter.hs:
+  hash: 81cbc278fe24cec2702e83b07a4bcd713ff919ab97ef807f8021e7925c370519
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamFunSyntax.hs:
+  hash: 2530ab9212a08c93a99c4dbcc433890648f1335861bfd6f0a6568289fe7f011c
+/Users/cpsc/Desktop/CPSC354-Assignments/Assignment3/LambdaFun/src/LamNatInterpreter.hs:
+  hash: f714f3e0bded7d3f37d48c40288d3894f7db28c0f7716cc342557665c50520c9
