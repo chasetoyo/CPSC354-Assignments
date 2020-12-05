@@ -1,0 +1,28 @@
+rec le = \x.\y. case x of {
+	0 -> true,
+	_ -> case y of {
+		0 -> false,
+		_ -> le (x - 1) (y -1)
+	}
+} ;; 
+
+rec merge = \x.\y. case le (head x) (head y) of {
+	true -> case tail x == [] of {
+		true -> (head x) : y,
+		_ -> (head x) : (merge (tail x) y)
+	},
+	_ -> case tail y == [] of {
+		true -> (head y) : x,
+		_ -> (head y) : (merge (tail y) x)
+	}
+};;
+
+rec makeLists = \x. case tail x of {
+	[] -> ((head x):[]):[],
+	_ -> ((head x):[]):(makeLists (tail x))
+};;
+
+rec mergeLists = \x. case le (head (head x)) (head(head (tail x))) of {
+	true -> x,
+	_ -> mergeLists ((merge (head x) (head(tail x))) : (tail (tail x)))
+};;
