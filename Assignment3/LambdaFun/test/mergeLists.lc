@@ -26,3 +26,5 @@ rec mergeLists = \x. case le (head (head x)) (head(head (tail x))) of {
 	true -> x,
 	_ -> mergeLists ((merge (head x) (head(tail x))) : (tail (tail x)))
 };;
+
+mergeLists (makeLists [4,3,2,1,0]);;

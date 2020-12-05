@@ -5,3 +5,7 @@ rec le = \x.\y. case x of {
 		_ -> le (x - 1) (y -1)
 	}
 } ;; 
+
+le 1 2;;
+le 2 1;;
+le 0 0;;

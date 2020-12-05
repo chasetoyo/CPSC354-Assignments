@@ -16,3 +16,5 @@ rec merge = \x.\y. case le (head x) (head y) of {
 		_ -> (head y) : (merge (tail y) x)
 	}
 };;
+
+merge [0,2,4] [1,3];;

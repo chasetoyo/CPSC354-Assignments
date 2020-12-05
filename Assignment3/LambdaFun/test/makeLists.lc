@@ -2,3 +2,5 @@ rec makeLists = \x. case tail x of {
 	[] -> ((head x):[]):[],
 	_ -> ((head x):[]):(makeLists (tail x))
 };;
+
+makeLists [1,2,3];;
