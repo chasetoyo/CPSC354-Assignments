@@ -1,0 +1,23 @@
+val newCList = \e.
+    let val a = new [] in
+    a := [e,a];
+    a;;
+
+-- complete the following functions
+
+val next = \a.
+	case !a of {
+		[e', a'] -> a'
+	};;
+
+val get = \e. 
+	case !e of {
+    [e,a] -> e
+	};;
+
+val insert = \e. \a.
+	newCList e
+
+-- val delete = \a. 
+val update = \e. \a.
+	a := [e, a];;
