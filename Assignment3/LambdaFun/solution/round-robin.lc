@@ -16,8 +16,12 @@ val get = \e.
 	};;
 
 val insert = \e. \a.
-	newCList e
+	let val x = new [] in
+    x := [e, next a];
+    a := [head !a, x];
+    x;;
+	
+-- val delete = \a.
 
--- val delete = \a. 
 val update = \e. \a.
 	a := [e, a];;
