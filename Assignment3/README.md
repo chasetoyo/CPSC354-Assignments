@@ -2,8 +2,7 @@
 ## Chase Toyofuku-Souza
 
 ## About
-Includes testing functions for the provided LambdaFun 
-
+Implementing Merge Sort as well as Circular Linked List in the programming language *LambdaFun* in order to simulate a round robin scheduling algorithm. Includes testing functions for the provided LambdaFun.
 
 ### Files
 
@@ -12,3 +11,6 @@ Includes testing functions for the provided LambdaFun
 - [`merge.lc`](LambdaFun/test/merge.lc)
 - [`makeLists.lc`](LambdaFun/test/makeLists.lc)
 - [`mergeLists.lc`](LambdaFun/test/mergeLists.lc)
+
+### LambdaMem
+- [`round-robin.lc`](LambdaFun/solution/round-robin.lc)
