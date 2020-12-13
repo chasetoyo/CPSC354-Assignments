@@ -18,10 +18,17 @@ val get = \e.
 val insert = \e. \a.
 	let val x = new [] in
     x := [e, next a];
-    a := [head !a, x];
+    a := [get a, x];
     x;;
 	
--- val delete = \a.
+val delete = \a.
+	let val x = get a in
+	let val y = next(next a) in
+	(next a) := "NULL";
+	a := [x, y];
+	a;;
+
 
 val update = \e. \a.
-	a := [e, a];;
+	let val x = next a in
+	a := [e, x];;
