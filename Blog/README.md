@@ -11,4 +11,5 @@ A blog about Haskell and imperative programming languages in general as compared
 - [`Using Docker with Haskell`](docker.md)
 - [`Imperative vs Functional Programming`](functional.md)
 - [`Types in Haskell`](types.md)
-- [`List Comprehension`](lists.md)
+- [`Overview of Lists`](lists.md)
+- [`List Comprehension`](list_comp.md)
