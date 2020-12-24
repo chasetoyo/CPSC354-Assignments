@@ -17,7 +17,7 @@ Primitive data types are the way that all numbers and characters are represented
 ## Types in Haskell
 As mentioned above, each value has an associated type, and the association of a value with its type is called a **typing**. Typings in Haskell are written as
 
-```
+```Haskell
 5 :: Integer
 'a' :: Char
 square :: Integer -> Integer
