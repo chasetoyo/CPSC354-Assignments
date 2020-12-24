@@ -37,8 +37,6 @@ RUN cabal install BNFC
 
 RUN cd grammar && bnfc -m -haskell LambdaNat.cf && make && cp *.hs ../src && cd ../src
 
-CMD ["./grammar/TestLambdaNat"] # CMD only for testing parser
-
 RUN cabal new-build
 ```
 
