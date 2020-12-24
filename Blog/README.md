@@ -15,3 +15,5 @@ A blog about Haskell and imperative programming languages in general as compared
 - [`List Comprehension`](list_comp.md)
 - [`Functions`](functions.md)
 - [`Currying`](curry.md)
+- [`Anonymous Functions`](lambda.md)
+- [`Monads`](monad.md)
