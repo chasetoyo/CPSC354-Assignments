@@ -1,0 +1,17 @@
+# Imperative vs Functional Programming
+
+## Expressions
+The C++ standard defines an expression as "a sequence of operators and operands that specifies a computation". Although the usage of semicolons are not standard across all programming languages, it helps in our case to easier identify an expression vs a statement. The C++ definition doesn't make it immediately obvious what an expression is, we can think back to lower school math. At this point, we were able to do things such as 1 + 2, or 5x - 3. These simple expressions evaluate to some value, but we do not specifically include what that value is. Instead, we provide a sequence of operators and operands, the "+" and "-" being the operators, and the numbers being the operands. 
+
+Hopefully this explanation of expressions as it relates to math helped to grasp the basic concept of what an expression is. Relating it back to computer science, we can still view 1 + 2 or 5 * x - 3 as expressions, but there is so much more than just that. Expressions can also include calling functions, for example `add(3,1)`. Expressions will always evaluate and return some value that can be used in the program.
+
+## Statements
+On the other hand we have statements. Again, relating it to lower school math, a statement would be seen as 1 + 2 = 3. Note that now, we have included the equal sign as well as a value. It is not too different from expressions, and we can also notice that the elements that make up a statement are actually expressions. 1 + 2 is an expression, and 3 by itself is also an expression. 
+
+As for a statement in computer science, this would include things such as conditionals, loops, assignments. These do not return values but compute via the side effects they have on the control flow or the memory. The easiest way to signify a statement is if there is a semicolon at the end of it. For example, `x` is an expression, but `x;` is a statement. C++ also signifies statement blocks with `{}`, or opening and closing brackets.
+
+## Paradigm of Imperative Programming
+The most dominant programming paradigm is imperative programming, and it can be seen in languages such as Java, C++, Python, JavaScript, and countless others. Imperative programming relies on the evaluation of expressions in the form of statements that modify the state of the program. Imperative programming, when written, is a bunch of clearly sequential computations, and for that reason it is a lot easier to understand the flow of instructions. It relies heavily on loops and functions to manipulate the flow of instruction. To keep track of all the values and memory that has been modified, imperative programing takes advantage of variables that store values and allow those values to be accessed at a later time. 
+
+## Paradigm of Functional Programming
+Unlike imperative programming, functional programming is a lot less common, and can be seen in languages such as Julia, Scala, and Haskell. Rather than relying on a very definitive sequence of statements, functional programming is (surprisingly) comprised of only functions. These functions can be passed values and they transform those values to be passed on to other functions. It is based purely on input and output of these functions. Additionally, in Haskell, everything can be considered an expresssion because all things evaluate to some value. Another key difference is the use of recursion, rather than loops, which we will go into more detail in later blog posts.
