@@ -13,3 +13,5 @@ A blog about Haskell and imperative programming languages in general as compared
 - [`Types in Haskell`](types.md)
 - [`Overview of Lists`](lists.md)
 - [`List Comprehension`](list_comp.md)
+- [`Functions`](functions.md)
+- [`Currying`](curry.md)
